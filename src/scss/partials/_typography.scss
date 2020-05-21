@@ -1,6 +1,8 @@
 /*Variables*/
-$primary-font: 'Sawarabi Mincho';
-$secondary-font: 'Marck Script';
+$primary-font-ours: 'Sawarabi Mincho';
+$secondary-font-ours: 'Marck Script';
+$primary-font: 'Merriweather', serif;
+$secondary-font: 'Open Sans', sans-serif;
 
 /*Typography*/
 h1,
@@ -10,30 +12,30 @@ h2 {
 }
 
 h1 {
-  font-size: 8em;
+  font-size: 4em;
   font-weight: bold;
   line-height: 1.2;
   margin: 0 0 0.4em;
 
   @include MQ(S) {
-    font-size: 8em;
+    font-size: 4em;
     font-weight: bold;
   }
 
   @include MQ(M) {
-    font-size: 8em;
+    font-size: 4em;
     font-weight: bold;
   }
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
   font-style: italic;
   margin: 1em 0 .3em;
 
   @include MQ(S) {
-    font-size: 3em;
+    font-size: 2em;
     margin: 1em 0 1.4em;
   }
 }
@@ -84,37 +86,37 @@ p {
 }
 
 .page-title {
-   font-family: $secondary-font;
+   font-family: $secondary-font-ours;
    font-size: 8em;
    font-weight: bold;
 }
 
 .page-headers {
-   font-family: $secondary-font;
+   font-family: $secondary-font-ours;
    font-size: 3em;
    font-weight: bold;
    font-style: italic;
 }
 
 .page-paragraphs {
-   font-family: $primary-font;
+   font-family: $primary-font-ours;
    font-size: 1em;
 }
 
 .nav-title {
-   font-family: $secondary-font;
+   font-family: $secondary-font-ours;
    font-size: 3em;
    font-weight: bold;
 }
 
 .nav-buttons {
-   font-family: $primary-font;
+   font-family: $primary-font-ours;
    font-size: 1.6em;
    font-weight: bold;
 }
 
 .other-buttons {
-   font-family: $secondary-font;
+   font-family: $secondary-font-ours;
    font-size: 1.6em;
    font-weight: bold;
 }
