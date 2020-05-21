@@ -13,25 +13,20 @@ h2 {
 
 h1 {
   font-size: 4em;
-  font-weight: bold;
   line-height: 1.2;
   margin: 0 0 0.4em;
 
   @include MQ(S) {
     font-size: 4em;
-    font-weight: bold;
   }
 
   @include MQ(M) {
     font-size: 4em;
-    font-weight: bold;
   }
 }
 
 h2 {
   font-size: 2em;
-  font-weight: bold;
-  font-style: italic;
   margin: 1em 0 .3em;
 
   @include MQ(S) {
@@ -46,6 +41,7 @@ section > h2::before {
 }
 
 p {
+  font-family: $primary-font;
   font-size: 1.4rem;
   line-height: 1.4;
   color: lighten($color-2, 25%);
@@ -90,6 +86,8 @@ p {
    font-size: 8em;
    font-weight: bold;
    margin-bottom: 200x;
+   text-align: center;
+   margin-bottom: 80px;
 }
 
 .page-headers {
@@ -97,17 +95,22 @@ p {
    font-size: 3em;
    font-weight: bold;
    font-style: italic;
+   text-align: center;
+   margin-bottom: 80px;
 }
 
 .page-paragraphs {
    font-family: $primary-font-ours;
    font-size: 1em;
+   margin-bottom: 80px;
 }
 
 .nav-title {
    font-family: $secondary-font-ours;
    font-size: 3em;
    font-weight: bold;
+   text-align: center;
+   margin-bottom: 80px;
 }
 
 .nav-buttons {
@@ -120,4 +123,14 @@ p {
    font-family: $secondary-font-ours;
    font-size: 1.6em;
    font-weight: bold;
+}
+
+.cd-box h2 {
+  border: solid black 2px;
+  text-align: center;
+  padding: 10px;
+}
+
+.cd-box h2 + p {
+  text-decoration: underline;
 }
