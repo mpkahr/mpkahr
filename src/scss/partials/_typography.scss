@@ -1,0 +1,120 @@
+/*Variables*/
+$primary-font: 'Sawarabi Mincho';
+$secondary-font: 'Marck Script';
+
+/*Typography*/
+h1,
+h2 {
+  font-family: $secondary-font;
+  color: $color-2;
+}
+
+h1 {
+  font-size: 8em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 0 0.4em;
+
+  @include MQ(S) {
+    font-size: 8em;
+    font-weight: bold;
+  }
+
+  @include MQ(M) {
+    font-size: 8em;
+    font-weight: bold;
+  }
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: bold;
+  font-style: italic;
+  margin: 1em 0 .3em;
+
+  @include MQ(S) {
+    font-size: 3em;
+    margin: 1em 0 1.4em;
+  }
+}
+
+section > h2::before {
+  /* number before each section title */
+  color: darken($color-4, 15%);
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: lighten($color-2, 25%);
+
+  a {
+    color: $color-1;
+    text-decoration: underline;
+  }
+
+  @include MQ(S) {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}
+
+
+.cd-buttons {
+	.cd-box:first-of-type {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.cd-box:last-of-type {
+		margin-top: -1px;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+
+	button {
+		margin: .4em;
+	}
+
+	@include MQ(M) {
+		button {
+			margin: 1em;
+		}
+	}
+}
+
+.page-title {
+   font-family: $secondary-font;
+   font-size: 8em;
+   font-weight: bold;
+}
+
+.page-headers {
+   font-family: $secondary-font;
+   font-size: 3em;
+   font-weight: bold;
+   font-style: italic;
+}
+
+.page-paragraphs {
+   font-family: $primary-font;
+   font-size: 1em;
+}
+
+.nav-title {
+   font-family: $secondary-font;
+   font-size: 3em;
+   font-weight: bold;
+}
+
+.nav-buttons {
+   font-family: $primary-font;
+   font-size: 1.6em;
+   font-weight: bold;
+}
+
+.other-buttons {
+   font-family: $secondary-font;
+   font-size: 1.6em;
+   font-weight: bold;
+}

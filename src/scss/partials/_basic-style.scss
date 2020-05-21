@@ -433,36 +433,7 @@ section {
 
 /* xTypography section - basic style */
 
-.cd-typography {
 
-	h1::before {
-		content: 'Aa - ';
-		color: $color-1;
-	}
-}
-
-.cd-buttons {
-	.cd-box:first-of-type {
-		border-bottom-left-radius: 0;
-		border-bottom-right-radius: 0;
-	}
-
-	.cd-box:last-of-type {
-		margin-top: -1px;
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
-	}
-
-	button {
-		margin: .4em;
-	}
-
-	@include MQ(M) {
-		button {
-			margin: 1em;
-		}
-	}
-}
 
 /* xIcons section - basic style */
 
