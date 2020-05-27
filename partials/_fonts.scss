@@ -1,0 +1,16 @@
+/*variables*/
+$primary-font: 'Sawarabi Mincho';
+$secondary-font: 'Marck Script';
+
+/*Font CSS*/
+h1 {
+   font-family: $secondary-font;
+}
+
+h2, h3 {
+   font-family: $secondary-font;
+}
+
+p {
+   font-family: $primary-font;
+}

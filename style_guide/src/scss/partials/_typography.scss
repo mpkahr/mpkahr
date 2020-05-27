@@ -1,0 +1,62 @@
+/*Variables*/
+$primary-font-ours: 'Sawarabi Mincho';
+$secondary-font-ours: 'Marck Script';
+$primary-font: 'Merriweather', serif;
+$secondary-font: 'Open Sans', sans-serif;
+
+/*Typography*/
+
+
+.page-title {
+   font-family: $secondary-font-ours;
+   font-size: 8em;
+   font-weight: bold;
+   margin-bottom: 200x;
+   text-align: center;
+   margin-bottom: 80px;
+}
+
+.page-headers {
+   font-family: $secondary-font-ours;
+   font-size: 3em;
+   font-weight: bold;
+   font-style: italic;
+   text-align: center;
+   margin-bottom: 80px;
+}
+
+.page-paragraphs {
+   font-family: $primary-font-ours;
+   font-size: 1em;
+   margin-bottom: 80px;
+}
+
+.nav-title {
+   font-family: $secondary-font-ours;
+   font-size: 3em;
+   font-weight: bold;
+   text-align: center;
+   margin-bottom: 80px;
+}
+
+.nav-buttons {
+   font-family: $primary-font-ours;
+   font-size: 1.6em;
+   font-weight: bold;
+}
+
+.other-buttons {
+   font-family: $secondary-font-ours;
+   font-size: 1.6em;
+   font-weight: bold;
+}
+
+.cd-box h2 {
+  border: solid black 2px;
+  text-align: center;
+  padding: 10px;
+}
+
+.cd-box h2 + p {
+  text-decoration: underline;
+}

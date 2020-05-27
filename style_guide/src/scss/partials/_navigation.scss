@@ -1,0 +1,27 @@
+.cd-primary-nav, .cd-secondary-nav, .cd-third-nav {
+    
+    a {
+        color: $color-5;
+        padding-left: 1rem;
+        font-family: $primary-font-ours;
+    }
+
+    a:hover {
+        color: $color-1;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: darken($color-4, 25%);
+    }
+    a::after {
+        content: "\a";
+    }
+}
+
+.cd-navigation {
+    h3 {
+        font-family: $secondary-font-ours;
+        font-size: 2rem;
+    }
+}
