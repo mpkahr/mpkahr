@@ -29,7 +29,8 @@ footer {
 .intro {
   background: url(svg/curtain_1.svg);
   background-size: 100%;
-  padding: 150px 50px 200px 150px;
+  background-repeat: no-repeat;
+  padding: 150px 50px 100px 150px;
   color: rgba(0, 0, 0, 0);
 }
 
@@ -40,7 +41,8 @@ footer {
 .intro:hover {
   background: url(svg/curtain_2.svg);
   background-size: 100%;
-  padding: 150px 50px 200px 220px;
+  background-repeat: no-repeat;
+  padding: 150px 50px 100px 220px;
   color: black;
   transition: 0.5s;
 }
