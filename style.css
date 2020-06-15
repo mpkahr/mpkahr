@@ -12,12 +12,13 @@ p {
   font-family: "Sawarabi Mincho";
 }
 
-.page-wrapper {
+body {
   background: url(svg/tile.svg);
+  margin: 0;
 }
 
-body {
-  margin: 0;
+.page-wrapper {
+  margin: 1em;
 }
 
 .wrapper {
