@@ -1,10 +1,7 @@
 /*variables*/
-
 /*Font CSS*/
 h1 {
   font-family: "Marck Script";
-  font-size: 6em;
-  text-align: center;
 }
 
 h2, h3 {
@@ -15,7 +12,6 @@ p {
   font-family: "Sawarabi Mincho";
 }
 
-/*# sourceMappingURL=styles.css.map */
 body {
   background: url(svg/tile.svg);
   margin: 0;
