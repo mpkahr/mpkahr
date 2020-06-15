@@ -1,17 +1,17 @@
 /*variables*/
-
 /*Font CSS*/
 h1 {
   font-family: "Marck Script";
+<<<<<<< HEAD
   font-size: 5em;
   text-align: center;
   margin: 0;
+=======
+>>>>>>> 6a176c76d2eab4ada2b2a06547f2473d324d33da
 }
 
 h2, h3 {
   font-family: "Marck Script";
-  font-size: 3em;
-  text-align: center;
 }
 
 p {
@@ -39,14 +39,6 @@ footer {
 
 .sidebar {
   margin-top: -30rem;
-}
-
-.sidebar h3 {
-  font-size: 1.5em;
-}
-
-.sidebar li {
-  list-style-type: none;
 }
 
 .intro {
