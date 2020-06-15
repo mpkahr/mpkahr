@@ -1,4 +1,9 @@
 @import 'partials/fonts';
+@import 'partials/background';
+
+.page-wrapper {
+    margin: 1em;
+}
 
 .wrapper {
     display: flex;
