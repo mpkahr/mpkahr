@@ -12,6 +12,14 @@ p {
   font-family: "Sawarabi Mincho";
 }
 
+.page-wrapper {
+  background: url(svg/tile.svg);
+}
+
+body {
+  margin: 0;
+}
+
 .wrapper {
   display: flex;
   flex-direction: row;
