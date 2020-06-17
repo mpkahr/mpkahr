@@ -1,5 +1,6 @@
 @import 'partials/fonts';
 @import 'partials/background';
+@import 'partials/tub';
 
 .page-wrapper {
     margin: 1em;
@@ -41,6 +42,10 @@ footer {
     transition: .5s;
 }
 
+body {
+    position: relative;
+}
+
 @media (min-width:60em) {
     .page-wrapper {
         display: grid;
@@ -53,7 +58,7 @@ footer {
     }
     .sidebar {
         grid-column: 2/3;
-        grid-row: 1/3;
+        grid-row: 1/2;
         margin: 0;
     }
 

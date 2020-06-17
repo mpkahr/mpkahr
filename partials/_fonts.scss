@@ -5,13 +5,34 @@ $secondary-font: 'Marck Script';
 /*Font CSS*/
 h1 {
    font-family: $secondary-font;
-   font-size: 6em;
+   font-size: 5em;
+   text-align: center;
 }
 
 h2, h3 {
    font-family: $secondary-font;
+   font-size: 3em;
+   text-align: center;
+}
+
+.sidebar h3 {
+   font-size: 1.6em;
 }
 
 p {
    font-family: $primary-font;
+   padding: 20px;
+}
+
+a {
+   text-decoration: none;
+   color:darken(#00a99d, 5%);
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+li {
+   list-style-type: none;
 }
