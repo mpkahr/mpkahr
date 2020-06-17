@@ -1,131 +1,17 @@
-/*variables*/
-/*Font CSS*/
-h1 {
-  font-family: "Marck Script";
-  font-size: 5em;
-  text-align: center;
+/* Error: expected "{".
+ *   ,
+ * 4 | @import 'partials/tub';
+ *   |                       ^
+ *   '
+ *   style.scss 4:23  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: expected \"{\".\a   \2577 \a 4 \2502  @import 'partials/tub';\d\a   \2502                        ^\a   \2575 \a   style.scss 4:23  root stylesheet";
 }
-
-h2, h3 {
-  font-family: "Marck Script";
-  font-size: 3em;
-  text-align: center;
-}
-
-.sidebar h3 {
-  font-size: 1.6em;
-}
-
-p {
-  font-family: "Sawarabi Mincho";
-  padding: 20px;
-}
-
-a {
-  text-decoration: none;
-  color: #009085;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-li {
-  list-style-type: none;
-}
-
-body {
-  background: url(svg/tile.svg);
-  margin: 0;
-}
-
-footer {
-  background: url(svg/tub.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 47vw;
-  text-align: center;
-  position: relative;
-  bottom: 0;
-  top: 200px;
-  justify-items: center;
-}
-
-.page-wrapper {
-  margin: 1em;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: row;
-}
-
-footer {
-  margin-top: 30rem;
-  text-align: center;
-}
-
-.sidebar {
-  margin-top: -30rem;
-}
-
-.intro {
-  background: url(svg/curtain_1.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding: 150px 50px 100px 150px;
-  color: rgba(0, 0, 0, 0);
-}
-
-.intro a {
-  color: #00a99d;
-}
-
-.intro:hover {
-  background: url(svg/curtain_2.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding: 150px 50px 100px 220px;
-  color: black;
-  transition: 0.5s;
-}
-
-body {
-  position: relative;
-}
-
-@media (min-width: 60em) {
-  .page-wrapper {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-gap: 3vw;
-  }
-
-  .main {
-    grid-column: 1/2;
-  }
-
-  .sidebar {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin: 0;
-  }
-
-  .wrapper {
-    display: block;
-  }
-
-  footer {
-    margin: 0;
-  }
-
-  .intro {
-    padding: 150px 50px 300px 200px;
-  }
-
-  .intro:hover {
-    padding: 150px 50px 300px 250px;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */

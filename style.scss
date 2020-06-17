@@ -1,6 +1,11 @@
 @import 'partials/fonts';
 @import 'partials/background';
+<<<<<<< HEAD
 @import 'partials/tub';
+=======
+@import 'partials/curtain';
+@import 'partials/sidebar';
+>>>>>>> f25dafad940e04af3caa4b04877c458b36145572
 
 .page-wrapper {
     margin: 1em;
@@ -20,6 +25,7 @@ footer {
     margin-top: -30rem;
 }
 
+<<<<<<< HEAD
 // Shower curtain for intro section
 .intro {
     background: url(svg/curtain_1.svg);
@@ -46,6 +52,8 @@ body {
     position: relative;
 }
 
+=======
+>>>>>>> f25dafad940e04af3caa4b04877c458b36145572
 @media (min-width:60em) {
     .page-wrapper {
         display: grid;
@@ -68,14 +76,5 @@ body {
 
     footer {
         margin: 0;
-    }
-
-    // Shower curtain for intro section
-    .intro {
-        padding: 150px 50px 300px 200px;
-    }
-
-    .intro:hover {
-        padding: 150px 50px 300px 250px;
     }
 }
