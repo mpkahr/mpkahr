@@ -18,24 +18,6 @@ body {
   margin: 0;
 }
 
-.page-wrapper {
-  margin: 1em;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: row;
-}
-
-footer {
-  margin-top: 30rem;
-  text-align: center;
-}
-
-.sidebar {
-  margin-top: -30rem;
-}
-
 .intro {
   background: url(svg/curtain_1.svg);
   background-size: 100%;
@@ -55,6 +37,33 @@ footer {
   padding: 150px 50px 100px 220px;
   color: black;
   transition: 0.5s;
+}
+
+@media (min-width: 60em) {
+  .intro {
+    padding: 150px 50px 300px 200px;
+  }
+
+  .intro:hover {
+    padding: 150px 50px 300px 250px;
+  }
+}
+.page-wrapper {
+  margin: 1em;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+  margin-top: 30rem;
+  text-align: center;
+}
+
+.sidebar {
+  margin-top: -30rem;
 }
 
 @media (min-width: 60em) {
@@ -80,14 +89,6 @@ footer {
 
   footer {
     margin: 0;
-  }
-
-  .intro {
-    padding: 150px 50px 300px 200px;
-  }
-
-  .intro:hover {
-    padding: 150px 50px 300px 250px;
   }
 }
 
