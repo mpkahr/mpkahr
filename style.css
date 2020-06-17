@@ -2,12 +2,6 @@
 /*Font CSS*/
 h1 {
   font-family: "Marck Script";
-<<<<<<< HEAD
-  font-size: 5em;
-  text-align: center;
-  margin: 0;
-=======
->>>>>>> 6a176c76d2eab4ada2b2a06547f2473d324d33da
 }
 
 h2, h3 {
@@ -60,12 +54,6 @@ footer {
   padding: 150px 50px 100px 220px;
   color: black;
   transition: 0.5s;
-}
-
-.extra1 {
-  background: url(svg/tub.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
 }
 
 @media (min-width: 60em) {
