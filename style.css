@@ -51,6 +51,10 @@ footer {
   justify-items: center;
 }
 
+.extra1 {
+  background-color: black;
+}
+
 .intro {
   background: url(svg/curtain_1.svg);
   background-size: 100%;
