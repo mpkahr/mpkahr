@@ -48,6 +48,73 @@ body {
     padding: 150px 50px 300px 250px;
   }
 }
+aside li {
+  list-style-type: none;
+}
+aside a {
+  text-decoration: none;
+}
+aside h3 {
+  display: none;
+}
+
+.design-selection {
+  background: url(svg/towel_1.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.design-selection nav {
+  padding: 25px 0;
+  opacity: 0;
+}
+
+.design-selection:hover {
+  background: url(svg/towel_2.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.design-selection:hover nav:hover {
+  opacity: 100%;
+}
+
+.design-archives {
+  background: url(svg/perfume_1.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.design-archives nav {
+  padding: 25px 0;
+  opacity: 0;
+}
+
+.design-archives:hover {
+  background: url(svg/perfume_2.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.design-archives:hover nav:hover {
+  opacity: 100%;
+}
+
+.zen-resources {
+  background: url(svg/candle_1.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.zen-resources nav {
+  padding: 25px 0;
+  opacity: 0;
+}
+
+.zen-resources:hover {
+  background: url(svg/candle_2.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.zen-resources:hover nav:hover {
+  opacity: 100%;
+}
+
 .page-wrapper {
   margin: 1em;
 }

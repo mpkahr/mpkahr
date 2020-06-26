@@ -1,0 +1,72 @@
+// general formatting
+aside {
+    li {
+    list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    h3 {
+        display: none;
+    }
+}
+
+// towel (select a design)
+.design-selection {
+    background: url(svg/towel_1.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    nav {
+        padding: 25px 0;
+        opacity: 0;
+    }
+}
+
+.design-selection:hover {
+    background: url(svg/towel_2.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    nav:hover {
+        opacity: 100%;
+    }
+}
+
+// perfume (archives)
+.design-archives {
+    background: url(svg/perfume_1.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    nav {
+        padding: 25px 0;
+        opacity: 0;
+    }
+}
+
+.design-archives:hover {
+    background: url(svg/perfume_2.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    nav:hover {
+        opacity: 100%;
+    }
+}
+
+// candle (resources)
+.zen-resources {
+    background: url(svg/candle_1.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    nav {
+        padding: 25px 0;
+        opacity: 0;
+    }
+}
+
+.zen-resources:hover {
+    background: url(svg/candle_2.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    nav:hover {
+        opacity: 100%;
+    }
+}
