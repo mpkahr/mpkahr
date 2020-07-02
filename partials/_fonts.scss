@@ -36,3 +36,22 @@ a:hover {
 li {
    list-style-type: none;
 }
+
+.intro h2 {
+   margin-top: -120;
+}
+
+
+footer a {
+   position: relative;
+   top: 130px;
+   left: -12px;
+   margin: 5px;
+   padding: 3px;
+}
+
+footer a:hover {
+   border: solid 1px #00a99d;
+   border-radius: 4px;
+   text-decoration: none;
+}
