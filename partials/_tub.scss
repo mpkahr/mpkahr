@@ -1,8 +1,14 @@
 footer {
-   background: url(svg/tub.svg);
+   background-image: url(svg/BubblesAndTub.svg), 
+                     url(svg/movingBubble1.svg),
+                     url(svg/movingBubble2.svg),
+                     url(svg/movingBubble3.svg),
+                     url(svg/movingBubble4.svg),
+                     url(svg/movingBubble5.svg);
    background-repeat: no-repeat;
-   background-size: cover;
+   background-size: inherit;
    height: 47vw;
+   width: 100%;
    text-align: center;
    position: relative;
    bottom: 0;
