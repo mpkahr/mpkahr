@@ -39,9 +39,6 @@ li {
 }
 
 footer a {
-  position: relative;
-  top: 130px;
-  left: -12px;
   margin: 5px;
   padding: 3px;
 }
@@ -274,6 +271,7 @@ aside h3 {
     height: 33.33vw;
     display: flex;
     align-items: flex-start;
+    margin-top: 0;
   }
   .design-selection nav {
     width: 33.33vw;
@@ -306,6 +304,7 @@ aside h3 {
     height: 33.33vw;
     display: flex;
     align-items: flex-start;
+    margin-top: 0;
   }
   .design-archives nav {
     width: 33.33vw;
@@ -327,6 +326,7 @@ aside h3 {
     height: 33.33vw;
     display: flex;
     align-items: flex-start;
+    margin-top: 0;
   }
   .zen-resources ul {
     width: 33.33vw;
@@ -406,10 +406,6 @@ footer {
   text-align: center;
 }
 
-.sidebar {
-  margin-top: -56rem;
-}
-
 body {
   position: relative;
 }
@@ -418,6 +414,10 @@ body {
   .wrapper {
     display: flex;
     flex-direction: row;
+  }
+
+  .sidebar {
+    margin: 0;
   }
 }
 @media (min-width: 60em) {

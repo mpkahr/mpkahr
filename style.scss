@@ -13,10 +13,6 @@ footer {
     text-align: center;
 }
 
-.sidebar {
-    margin-top: -56rem;
-}
-
 body {
     position: relative;
 }
@@ -25,6 +21,10 @@ body {
     .wrapper {
         display: flex;
         flex-direction: row;
+    }
+
+    .sidebar {
+        margin: 0;
     }
 }
 
