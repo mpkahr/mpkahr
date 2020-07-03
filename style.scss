@@ -8,11 +8,6 @@
     margin: 1em;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: row;
-}
-
 footer {
     margin-top: 30rem;
     text-align: center;
@@ -22,22 +17,23 @@ footer {
     margin-top: -56rem;
 }
 
-// Shower curtain for intro section
-
-.intro a {
-    color: #00a99d;
-}
-
 body {
     position: relative;
+}
+
+@media (min-width:35em) and (max-width:60em) {
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 @media (min-width:60em) {
     .page-wrapper {
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 60vw 1fr;
         grid-template-rows: 1fr 4fr 1fr;
-        grid-gap: 3vw;
+        grid-gap: 10px;
     }
 
     .main {
@@ -48,6 +44,7 @@ body {
         grid-column: 2/3;
         grid-row: 1/3;
         margin: 0;
+        margin-top: 400px;
     }
 
     .wrapper {

@@ -1,33 +1,38 @@
-// Shower curtain for intro section
+// Shower curtain for header
 .intro header h1 {
     background: url(svg/curtain_1.svg);
-    background-size: 100%;
-    padding: 30vw;
+    background-size: cover;
     background-repeat: no-repeat;
+    width: 75vw;
+    height: 70vw;
+    padding-left: 20vw;
+    padding-top: 30vw;
+    margin: auto;
     color: rgba(0, 0, 0, 0);
-    margin: 10px;
     transition: .5s;
-}
-
-.intro a {
-    color: #00a99d;
 }
 
 .intro header h1:hover {
     background: url(svg/curtain_2.svg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     color: rgba(0, 0, 0, 1);
-    
 }
 
-@media (min-width:50em) {
-    // Shower curtain for intro section
+@media (min-width:35em) and (max-width:60em) {
     .intro header h1 {
-        background-size: 700px;
-    }
+        width: 75vw;
+        height: 60vw;
+        padding-top: 40vw;
 
-    .intro header h1:hover {
-        background-size: 700px;
+    }
+}
+
+@media (min-width:60em) {
+    .intro header h1 {
+        width: 50vw;
+        height: 40vw;
+        padding-left: 10vw;
+        padding-top: 20vw;
     }
 }

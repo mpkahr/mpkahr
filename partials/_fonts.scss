@@ -55,3 +55,9 @@ footer a:hover {
    border-radius: 4px;
    text-decoration: none;
 }
+
+@media (min-width:60em) {
+   h1 {
+      font-size: 10vw;
+   }
+}
