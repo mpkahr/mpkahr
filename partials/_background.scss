@@ -2,3 +2,20 @@ body {
     background: url(svg/tile.svg);
     margin: 0;
 }
+
+.page-wrapper {
+    background-image: url(svg/movingBubble1.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.page-wrapper::after {
+    content: "";
+    background-image: url(svg/tub.svg);
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    height: 50vw;
+    width: 100%;
+    grid-template-columns: 1/3;
+}
