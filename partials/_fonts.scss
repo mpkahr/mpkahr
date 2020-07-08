@@ -18,6 +18,10 @@ h2, h3 {
    background-color: rgba(186, 187, 173, .5);
 }
 
+h2:before {
+   content: "";
+}
+
 .sidebar h3 {
    font-size: 1.6em;
 }

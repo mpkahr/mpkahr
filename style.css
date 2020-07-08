@@ -15,6 +15,10 @@ h2, h3 {
   background-color: rgba(186, 187, 173, 0.5);
 }
 
+h2:before {
+  content: "^^^";
+}
+
 .sidebar h3 {
   font-size: 1.6em;
 }
@@ -435,6 +439,7 @@ body {
 header h2 {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  margin-top: 40px;
 }
 
 @media (min-width: 35em) and (max-width: 60em) {
@@ -445,6 +450,9 @@ header h2 {
 
   .sidebar {
     margin: 0;
+  }
+  .sidebar ul {
+    padding: 10px;
   }
 }
 @media (min-width: 60em) {
