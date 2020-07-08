@@ -10,6 +10,9 @@ h2, h3 {
   font-family: "Marck Script";
   font-size: 3em;
   text-align: center;
+  padding: 10px;
+  margin: 0;
+  background-color: rgba(186, 187, 173, 0.5);
 }
 
 .sidebar h3 {
@@ -19,6 +22,7 @@ h2, h3 {
 p {
   font-family: "Sawarabi Mincho";
   padding: 20px;
+  margin-top: 0;
 }
 
 a {
@@ -404,10 +408,33 @@ aside h3 {
 
 footer {
   text-align: center;
+  padding: 30px;
+  margin-top: 20px;
+  background-color: rgba(0, 169, 157, 0.1);
+  border-radius: 10px;
 }
 
 body {
   position: relative;
+}
+
+.main div, .preamble {
+  border: solid 2px rgba(186, 187, 173, 0.5);
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.summary {
+  border-bottom: solid 2px rgba(186, 187, 173, 0.5);
+  border-left: solid 2px rgba(186, 187, 173, 0.5);
+  border-right: solid 2px rgba(186, 187, 173, 0.5);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+header h2 {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 @media (min-width: 35em) and (max-width: 60em) {
