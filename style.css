@@ -16,7 +16,7 @@ h2, h3 {
 }
 
 h2:before {
-  content: "^^^";
+  content: "";
 }
 
 .sidebar h3 {
