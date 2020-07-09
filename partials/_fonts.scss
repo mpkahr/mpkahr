@@ -5,22 +5,31 @@ $secondary-font: 'Marck Script';
 /*Font CSS*/
 h1 {
    font-family: $secondary-font;
-   font-size: 12vw;
+   font-size: 14vw;
    text-align: center;
+   font-weight: bold;
 }
 
 h2, h3 {
    font-family: $secondary-font;
-   font-size: 3em;
+   font-size: 1.9em;
    text-align: center;
-   padding: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
    margin: 0;
-   background-color: rgba(186, 187, 173, .5);
+   background-color: rgba(186, 187, 173);
+   border-top-right-radius: 7px;
+   border-top-left-radius: 7px;
 }
 
-h2:before {
-   content: "";
+h2:before, h3:before { 
+   content: url(images/flower-l.jpg);
+   vertical-align: middle;
+   zoom: .4;
+   margin-right: 10px;
 }
+
+
 
 .sidebar h3 {
    font-size: 1.6em;
@@ -61,8 +70,35 @@ footer a:hover {
    text-decoration: none;
 }
 
+@media (min-width:35em) {   
+   h2:after, h3:after {
+      content: url(images/flower-r.jpg);
+      vertical-align: middle;
+      zoom: .4;
+      margin-left: 10px;
+   }
+}
+
 @media (min-width:60em) {
    h1 {
       font-size: 10vw;
+   }
+}
+
+@media (min-width: 45em) and (max-width: 59em) {
+   h2, h3 {
+      font-size: 2.5em;
+   }
+}
+
+@media (min-width: 70em) {
+   h2, h3 {
+      font-size: 2.5em;
+   }
+}
+
+@media (min-width: 80em) {
+   h2, h3 {
+      font-size: 3em;
    }
 }
