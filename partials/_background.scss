@@ -4,7 +4,11 @@ body {
 }
 
 .page-wrapper {
-    background-image: url(svg/movingBubble1.svg);
+    background-image: url(svg/movingBubble1.svg),
+                      url(svg/movingBubble2.svg),
+                      url(svg/movingBubble3.svg),
+                      url(svg/movingBubble4.svg),
+                      url(svg/movingBubble5.svg);
     background-repeat: no-repeat;
     background-position: center bottom;
 }
