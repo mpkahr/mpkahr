@@ -34,7 +34,7 @@ aside {
     }
 }
 
-.design-selection:hover {
+.design-selection:hover, .design-selection:active {
     background: url(svg/towel_2.svg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -73,7 +73,7 @@ aside {
     }
 }
 
-.design-archives:hover {
+.design-archives:hover, .design-selection:active {
     background: url(svg/perfume_2.svg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@ aside {
     }
 }
 
-.zen-resources:hover {
+.zen-resources:hover, .zen-resources:active {
     background: url(svg/candle_2.svg);
     background-size: cover;
     background-repeat: no-repeat;

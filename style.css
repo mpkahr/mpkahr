@@ -226,17 +226,17 @@ aside h3 {
   opacity: 0;
 }
 
-.design-selection:hover {
+.design-selection:hover, .design-selection:active {
   background: url(svg/towel_2.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.design-selection:hover nav:hover {
+.design-selection:hover nav:hover, .design-selection:active nav:hover {
   opacity: 100%;
   position: relative;
   transform: skewX(10deg);
 }
-.design-selection:hover nav ul {
+.design-selection:hover nav ul, .design-selection:active nav ul {
   position: absolute;
   top: 10%;
   left: 20%;
@@ -264,12 +264,12 @@ aside h3 {
   top: 10%;
 }
 
-.design-archives:hover {
+.design-archives:hover, .design-selection:active {
   background: url(svg/perfume_2.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.design-archives:hover nav:hover {
+.design-archives:hover nav:hover, .design-selection:active nav:hover {
   opacity: 100%;
   position: relative;
 }
@@ -291,19 +291,19 @@ aside h3 {
   opacity: 0;
 }
 
-.zen-resources:hover {
+.zen-resources:hover, .zen-resources:active {
   background: url(svg/candle_2.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.zen-resources:hover ul:hover {
+.zen-resources:hover ul:hover, .zen-resources:active ul:hover {
   opacity: 100%;
   transform: skewY(5deg);
 }
-.zen-resources:hover ul li {
+.zen-resources:hover ul li, .zen-resources:active ul li {
   margin-left: 15vw;
 }
-.zen-resources:hover ul li:first-child {
+.zen-resources:hover ul li:first-child, .zen-resources:active ul li:first-child {
   margin-top: 53vw;
 }
 
