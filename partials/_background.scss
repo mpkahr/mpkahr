@@ -28,20 +28,14 @@ body {
                       url(svg/movingBubble3.svg),
                       url(svg/movingBubble4.svg),
                       url(svg/movingBubble5.svg);
-        height: 785vh;
         background-repeat: no-repeat;
         background-position: bottom;
-    }
-}
-
-@media (min-width: 50em) {
-    .page-wrapper {
-        height: 800vh;
+        padding-bottom: 50vw;
     }
 }
 
 @media (min-width: 60em) {
     .page-wrapper {
-        height: 785vh;
+        padding-bottom: 45vw;  
     }
 }

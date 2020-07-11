@@ -112,19 +112,14 @@ body {
 
   .page-wrapper {
     background-image: url(svg/tub.svg), url(svg/movingBubble1.svg), url(svg/movingBubble2.svg), url(svg/movingBubble3.svg), url(svg/movingBubble4.svg), url(svg/movingBubble5.svg);
-    height: 785vh;
     background-repeat: no-repeat;
     background-position: bottom;
-  }
-}
-@media (min-width: 50em) {
-  .page-wrapper {
-    height: 800vh;
+    padding-bottom: 50vw;
   }
 }
 @media (min-width: 60em) {
   .page-wrapper {
-    height: 785vh;
+    padding-bottom: 45vw;
   }
 }
 /*footer {
@@ -502,7 +497,6 @@ header h2 {
   .page-wrapper {
     display: grid;
     grid-template-columns: 60vw 1fr;
-    grid-template-rows: 1fr 4fr;
     grid-gap: 10px;
   }
 
