@@ -166,7 +166,7 @@ body {
   transition: 0.5s;
 }
 
-.intro header h1:hover {
+.intro header h1:hover, .intro header h1:target, .intro header h1:active {
   background: url(svg/curtain_2.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -322,7 +322,7 @@ aside h3 {
   .design-selection nav {
     width: 33.33vw;
     height: 60vw;
-    opacity: 100;
+    opacity: 0;
     position: relative;
   }
   .design-selection nav ul {
@@ -355,7 +355,7 @@ aside h3 {
   .design-archives nav {
     width: 33.33vw;
     height: 60vw;
-    opacity: 100;
+    opacity: 0;
     position: relative;
   }
   .design-archives nav ul {
@@ -377,7 +377,7 @@ aside h3 {
   .zen-resources ul {
     width: 33.33vw;
     height: 60vw;
-    opacity: 100;
+    opacity: 0;
     position: relative;
     margin: 0;
   }
