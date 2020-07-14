@@ -69,6 +69,7 @@ footer a:hover {
     content: url(images/flower-r.jpg);
     vertical-align: middle;
     zoom: 0.4;
+    zoom: 0.4;
     margin-left: 10px;
   }
 }
@@ -299,17 +300,13 @@ aside h3 {
   margin-left: 15vw;
 }
 .zen-resources:hover ul li:first-child, .zen-resources:active ul li:first-child {
-  margin-top: 53vw;
+  margin-top: 39vw;
 }
 
 /*** MEDIUM ***/
 @media (min-width: 35em) and (max-width: 60em) {
   .main {
     margin-bottom: 0;
-  }
-
-  aside li {
-    margin-bottom: 10px;
   }
 
   .design-selection {
@@ -320,16 +317,16 @@ aside h3 {
     margin-top: 0;
   }
   .design-selection nav {
+    position: absolute;
+    top: -100%;
+    left: 20%;
     width: 33.33vw;
     height: 60vw;
     opacity: 0;
     position: relative;
   }
   .design-selection nav ul {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    margin-left: -10px;
+    transform: scale(0.8);
   }
 
   .design-selection:hover nav:hover {
@@ -357,9 +354,12 @@ aside h3 {
     height: 60vw;
     opacity: 0;
     position: relative;
+    top: -90%;
   }
   .design-archives nav ul {
     top: 50%;
+    left: -5%;
+    transform: scale(0.7);
   }
 
   .design-archives:hover nav ul {
@@ -381,12 +381,12 @@ aside h3 {
     position: relative;
     margin: 0;
   }
-  .zen-resources ul li:first-child {
-    margin-top: 32vw;
-  }
 
   .zen-resources:hover ul:hover {
     transform: skewY(0deg);
+    top: -35%;
+    left: 15%;
+    transform: scale(0.7);
   }
   .zen-resources:hover ul li {
     margin-left: 0;
@@ -402,12 +402,14 @@ aside h3 {
     height: 33.33vw;
   }
   .design-selection nav {
-    width: 33.33vw;
-    height: 33.33vw;
+    width: 26vw;
+    height: 28vw;
+    transform: skewX(5deg);
   }
 
   .design-selection:hover nav ul {
     position: absolute;
+    left: 20px;
   }
 
   .design-archives {
@@ -421,7 +423,8 @@ aside h3 {
   }
 
   .design-archives:hover nav ul {
-    top: 20%;
+    top: 15%;
+    right: 55%;
   }
 
   .zen-resources {
@@ -430,18 +433,19 @@ aside h3 {
     height: 33.33vw;
   }
   .zen-resources ul {
-    width: 33.33vw;
-    height: 33.33vw;
+    width: 30vw;
+    height: 30vw;
   }
 
   .zen-resources:hover ul:hover {
-    transform: skewY(5deg);
+    transform: skewY(0deg);
+    transform: scale(0.9);
   }
   .zen-resources:hover ul li {
     margin-left: 5vw;
   }
   .zen-resources:hover ul li:first-child {
-    margin-top: 23vw;
+    margin-top: 19vw;
   }
 }
 .page-wrapper {
@@ -513,10 +517,6 @@ header h2 {
 
   .wrapper {
     display: block;
-  }
-
-  footer {
-    margin: 0;
   }
 }
 
