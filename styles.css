@@ -52,7 +52,7 @@ li {
 }
 
 .intro h2 {
-  margin-top: -120px;
+  margin-top: -120;
 }
 
 footer a {
@@ -96,7 +96,7 @@ footer a:hover {
     font-size: 3em;
   }
 }
-@media screen and (min-width: 0em ) and (min-resolution: 72dpi) {
+@media screen and (min-width: 0\0 ) and (min-resolution: 72dpi) {
   h2:after, h3:after {
     position: relative;
     top: 50%;
@@ -119,7 +119,7 @@ body {
   background-position: bottom;
 }
 
-@media screen and (min-width: 0em ) and (min-resolution: 72dpi) {
+@media screen and (min-width: 0\0 ) and (min-resolution: 72dpi) {
   body {
     background-size: 960px 540px;
   }
@@ -379,7 +379,7 @@ aside h3 {
   }
 
   .design-selection:hover nav:hover {
-    opacity: 1;
+    opacity: 100%;
     position: relative;
     transform: skewX(5deg);
   }
@@ -497,7 +497,7 @@ aside h3 {
     margin-top: 19vw;
   }
 }
-@media screen and (min-width: 0em ) and (min-resolution: 72dpi) and (min-width: 35em) and (max-width: 60em) {
+@media screen and (min-width: 0\0 ) and (min-resolution: 72dpi) and (min-width: 35em) and (max-width: 60em) {
   .design-selection nav {
     top: -90%;
   }
@@ -542,7 +542,7 @@ aside h3 {
   .design-archives nav {
     width: 100vw;
     height: 70vw;
-    opacity: 1;
+    opacity: 100%;
     position: relative;
   }
   .design-archives nav ul {
@@ -656,4 +656,4 @@ header h2 {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
