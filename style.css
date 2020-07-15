@@ -339,7 +339,7 @@ aside h3 {
   }
   .design-selection nav {
     position: absolute;
-    top: -90%;
+    top: -100%;
     left: 10%;
     width: 33.33vw;
     height: 60vw;
@@ -467,6 +467,11 @@ aside h3 {
   }
   .zen-resources:hover ul li:first-child {
     margin-top: 19vw;
+  }
+}
+@media screen and (min-width: 0\0 ) and (min-resolution: 72dpi) and (min-width: 35em) and (max-width: 60em) {
+  .design-selection nav {
+    top: -90%;
   }
 }
 .page-wrapper {
