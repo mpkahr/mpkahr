@@ -95,6 +95,7 @@ footer a:hover {
 }
 body {
   background: url(svg/tile.svg);
+  background-size: 960px 540px;
   margin: 0;
 }
 
