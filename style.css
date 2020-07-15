@@ -23,6 +23,7 @@ h2:before, h3:before {
   display: inline-block;
   content: url(images/flower-l.jpg);
   vertical-align: middle;
+  -webkit-zoom: 0.4;
   zoom: 0.4;
   margin-right: 10px;
 }
@@ -184,6 +185,8 @@ body {
   padding-top: 30vw;
   margin: auto;
   color: rgba(0, 0, 0, 0);
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
