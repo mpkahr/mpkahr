@@ -25,11 +25,10 @@ h2, h3 {
 h2:before, h3:before { 
    content: url(images/flower-l.jpg);
    vertical-align: middle;
+   -webkit-zoom: .4;
    zoom: .4;
    margin-right: 10px;
 }
-
-
 
 .sidebar h3 {
    font-size: 1.6em;

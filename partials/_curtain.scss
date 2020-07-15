@@ -9,6 +9,8 @@
     padding-top: 30vw;
     margin: auto;
     color: rgba(0, 0, 0, 0);
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
     transition: .5s;
 }
 
@@ -24,7 +26,6 @@
         width: 75vw;
         height: 60vw;
         padding-top: 40vw;
-
     }
 }
 
