@@ -296,3 +296,81 @@ aside {
         }
     }
 }
+
+@media (hover:none), (pointer: none) {
+    // towel (select a design)
+    .design-selection {
+        background: url(svg/towel_1.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vw;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        nav {
+            width: 80vw;
+            height: 80vw;
+            margin-left: 10px; 
+            opacity: 1;
+            position: relative;
+            transform: skewX(10deg);
+        }
+        nav ul {
+            position: absolute;
+            top: 10%;
+            left: 20%;
+        }
+    }
+
+    // perfume (archives)
+    .design-archives {
+        background: url(svg/perfume_1.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -90px;
+        nav {
+            width: 100vw;
+            height: 70vw;
+            opacity: 100%;
+            position: relative;
+        }
+        nav ul {
+            position: absolute;
+            top: 10%;
+        }
+    }
+
+    // candle (resources)
+    .zen-resources {
+        background: url(svg/candle_1.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vw;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-top: -150px;
+        ul {
+            width: 80vw;
+            height: 70vw;
+            opacity: 1;
+            transform: skewY(5deg);
+            -ms-transform: skewY(5deg);
+        }
+        ul li {
+            margin-left: 15vw;
+        }
+        ul li:first-child {
+            margin-top: 39vw;
+        }
+    }
+
+}
