@@ -504,7 +504,7 @@ aside h3 {
 }
 @media (hover: none), (pointer: none) {
   .design-selection {
-    background: url(svg/towel_1.svg);
+    background: url(svg/towel_2.svg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -524,12 +524,12 @@ aside h3 {
   }
   .design-selection nav ul {
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 20%;
   }
 
   .design-archives {
-    background: url(svg/perfume_1.svg);
+    background: url(svg/perfume_2.svg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -537,7 +537,7 @@ aside h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -90px;
+    margin-top: -30px;
   }
   .design-archives nav {
     width: 100vw;
@@ -551,7 +551,7 @@ aside h3 {
   }
 
   .zen-resources {
-    background: url(svg/candle_1.svg);
+    background: url(svg/candle_2.svg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
