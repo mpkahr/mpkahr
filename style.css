@@ -212,6 +212,31 @@ body {
     padding-top: 20vw;
   }
 }
+@media (hover: none), (pointer: none) {
+  .intro header h1 {
+    background: url(svg/curtain_1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 75vw;
+    height: 70vw;
+    padding-left: 20vw;
+    padding-top: 30vw;
+    margin: auto;
+    color: rgba(0, 0, 0, 0);
+    animation: curtain 1s 1s ease-in-out forwards;
+  }
+
+  @keyframes curtain {
+    0% {
+      background: url(svg/curtain_1.svg);
+      color: rgba(0, 0, 0, 0);
+    }
+    100% {
+      background: url(svg/curtain_2.svg);
+      color: black;
+    }
+  }
+}
 /*** SMALL ***/
 .main {
   margin-bottom: 100px;
@@ -475,6 +500,79 @@ aside h3 {
 @media screen and (min-width: 0\0 ) and (min-resolution: 72dpi) and (min-width: 35em) and (max-width: 60em) {
   .design-selection nav {
     top: -90%;
+  }
+}
+@media (hover: none), (pointer: none) {
+  .design-selection {
+    background: url(svg/towel_1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vw;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .design-selection nav {
+    width: 80vw;
+    height: 80vw;
+    margin-left: 10px;
+    opacity: 1;
+    position: relative;
+    transform: skewX(10deg);
+  }
+  .design-selection nav ul {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+  }
+
+  .design-archives {
+    background: url(svg/perfume_1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -90px;
+  }
+  .design-archives nav {
+    width: 100vw;
+    height: 70vw;
+    opacity: 100%;
+    position: relative;
+  }
+  .design-archives nav ul {
+    position: absolute;
+    top: 10%;
+  }
+
+  .zen-resources {
+    background: url(svg/candle_1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: -150px;
+  }
+  .zen-resources ul {
+    width: 80vw;
+    height: 70vw;
+    opacity: 1;
+    transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+  }
+  .zen-resources ul li {
+    margin-left: 15vw;
+  }
+  .zen-resources ul li:first-child {
+    margin-top: 39vw;
   }
 }
 .page-wrapper {

@@ -37,3 +37,29 @@
         padding-top: 20vw;
     }
 }
+
+@media (hover:none), (pointer: none) {
+    .intro header h1 {
+        background: url(svg/curtain_1.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 75vw;
+        height: 70vw;
+        padding-left: 20vw;
+        padding-top: 30vw;
+        margin: auto;
+        color: rgba(0, 0, 0, 0);
+        animation: curtain 1s 1s ease-in-out forwards;
+    }
+
+    @keyframes curtain {
+        0% {
+            background: url(svg/curtain_1.svg);
+            color: rgba(0, 0, 0, 0);
+        }
+        100% {
+            background: url(svg/curtain_2.svg);
+            color: rgba(0, 0, 0, 1);
+        }
+    }
+}
