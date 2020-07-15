@@ -13,6 +13,8 @@ body {
                       url(svg/movingBubble5.svg);
     background-repeat: no-repeat;
     background-position: bottom;
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-position: bottom;
 }
 
 @media (min-width: 35em) {
@@ -30,6 +32,8 @@ body {
                           url(svg/movingBubble5.svg);
         background-repeat: no-repeat;
         background-position: bottom;
+        -webkit-background-repeat: no-repeat;
+        -webkit-background-position: bottom;
         padding-bottom: 50vw;
     }
 }

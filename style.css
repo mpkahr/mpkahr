@@ -103,6 +103,8 @@ body {
   background-image: url(svg/BubblesAndTub.svg), url(svg/movingBubble1.svg), url(svg/movingBubble2.svg), url(svg/movingBubble3.svg), url(svg/movingBubble4.svg), url(svg/movingBubble5.svg);
   background-repeat: no-repeat;
   background-position: bottom;
+  -webkit-background-repeat: no-repeat;
+  -webkit-background-position: bottom;
 }
 
 @media (min-width: 35em) {
@@ -115,6 +117,8 @@ body {
     background-image: url(svg/tub.svg), url(svg/movingBubble1.svg), url(svg/movingBubble2.svg), url(svg/movingBubble3.svg), url(svg/movingBubble4.svg), url(svg/movingBubble5.svg);
     background-repeat: no-repeat;
     background-position: bottom;
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-position: bottom;
     padding-bottom: 50vw;
   }
 }
@@ -499,17 +503,25 @@ header h2 {
 }
 @media (min-width: 60em) {
   .page-wrapper {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 60vw 1fr;
     grid-template-columns: 60vw 1fr;
+    -ms-grid-gap: 10px;
     grid-gap: 10px;
   }
 
   .main {
+    -ms-grid-column: 1;
     grid-column: 1/2;
+    -ms-grid-row: 2;
   }
 
   .sidebar {
+    -ms-grid-column: 2;
     grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
     grid-row: 1/3;
     margin: 0;
     margin-top: 400px;
