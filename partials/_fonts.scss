@@ -23,6 +23,7 @@ h2, h3 {
 }
 
 h2:before, h3:before { 
+   display: inline-block;
    content: url(images/flower-l.jpg);
    vertical-align: middle;
    -webkit-zoom: .4;
@@ -71,9 +72,11 @@ footer a:hover {
 
 @media (min-width:35em) {   
    h2:after, h3:after {
+      display: inline-block;
       content: url(images/flower-r.jpg);
       vertical-align: middle;
       zoom: .4;
+      zoom: (.4);
       margin-left: 10px;
    }
 }
@@ -99,5 +102,18 @@ footer a:hover {
 @media (min-width: 80em) {
    h2, h3 {
       font-size: 3em;
+   }
+}
+
+//Media Query for IE only
+@media screen and (min-width:0\0) and (min-resolution: +72dpi) {
+   h2:after, h3:after {
+      position: relative;
+      top: 50%;
+   }
+
+   h2:before, h3:before {
+      position: relative;
+      top: 50%;
    }
 }

@@ -20,6 +20,7 @@ h2, h3 {
 }
 
 h2:before, h3:before {
+  display: inline-block;
   content: url(images/flower-l.jpg);
   vertical-align: middle;
   zoom: 0.4;
@@ -66,8 +67,10 @@ footer a:hover {
 
 @media (min-width: 35em) {
   h2:after, h3:after {
+    display: inline-block;
     content: url(images/flower-r.jpg);
     vertical-align: middle;
+    zoom: 0.4;
     zoom: 0.4;
     margin-left: 10px;
   }
@@ -92,6 +95,17 @@ footer a:hover {
     font-size: 3em;
   }
 }
+@media screen and (min-width: 0\0 ) and (min-resolution: 72dpi) {
+  h2:after, h3:after {
+    position: relative;
+    top: 50%;
+  }
+
+  h2:before, h3:before {
+    position: relative;
+    top: 50%;
+  }
+}
 body {
   background: url(svg/tile.svg);
   margin: 0;
@@ -104,6 +118,11 @@ body {
   background-position: bottom;
 }
 
+@media screen and (min-width: 0\0 ) and (min-resolution: 72dpi) {
+  body {
+    background-size: 960px 540px;
+  }
+}
 @media (min-width: 35em) {
   .main {
     background-image: none;
@@ -114,6 +133,8 @@ body {
     background-image: url(svg/tub.svg), url(svg/movingBubble1.svg), url(svg/movingBubble2.svg), url(svg/movingBubble3.svg), url(svg/movingBubble4.svg), url(svg/movingBubble5.svg);
     background-repeat: no-repeat;
     background-position: bottom;
+    -ms-background-repeat: no-repeat;
+    -ms-background-position: bottom;
     padding-bottom: 50vw;
   }
 }
@@ -166,7 +187,7 @@ body {
   transition: 0.5s;
 }
 
-.intro header h1:hover {
+.intro header h1:hover, .intro header h1:target, .intro header h1:active {
   background: url(svg/curtain_2.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -226,8 +247,8 @@ aside h3 {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.design-selection:hover nav:hover, .design-selection:active nav:hover {
-  opacity: 100%;
+.design-selection:hover nav:hover, .design-selection:hover .nav:active, .design-selection:active nav:hover, .design-selection:active .nav:active {
+  opacity: 1;
   position: relative;
   transform: skewX(10deg);
 }
@@ -264,8 +285,8 @@ aside h3 {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.design-archives:hover nav:hover, .design-selection:active nav:hover {
-  opacity: 100%;
+.design-archives:hover nav:hover, .design-archives:hover .nav:active, .design-selection:active nav:hover, .design-selection:active .nav:active {
+  opacity: 1;
   position: relative;
 }
 
@@ -291,25 +312,22 @@ aside h3 {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.zen-resources:hover ul:hover, .zen-resources:active ul:hover {
-  opacity: 100%;
+.zen-resources:hover ul:hover, .zen-resources:hover .ul:active, .zen-resources:active ul:hover, .zen-resources:active .ul:active {
+  opacity: 1;
   transform: skewY(5deg);
+  -ms-transform: skewY(5deg);
 }
 .zen-resources:hover ul li, .zen-resources:active ul li {
   margin-left: 15vw;
 }
 .zen-resources:hover ul li:first-child, .zen-resources:active ul li:first-child {
-  margin-top: 53vw;
+  margin-top: 39vw;
 }
 
 /*** MEDIUM ***/
 @media (min-width: 35em) and (max-width: 60em) {
   .main {
     margin-bottom: 0;
-  }
-
-  aside li {
-    margin-bottom: 10px;
   }
 
   .design-selection {
@@ -320,22 +338,22 @@ aside h3 {
     margin-top: 0;
   }
   .design-selection nav {
+    position: absolute;
+    top: -90%;
+    left: 10%;
     width: 33.33vw;
     height: 60vw;
-    opacity: 100;
+    opacity: 0;
     position: relative;
   }
   .design-selection nav ul {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    margin-left: -10px;
+    transform: scale(0.8);
   }
 
   .design-selection:hover nav:hover {
     opacity: 100%;
     position: relative;
-    transform: skewX(0deg);
+    transform: skewX(5deg);
   }
   .design-selection:hover nav ul {
     position: absolute;
@@ -355,11 +373,14 @@ aside h3 {
   .design-archives nav {
     width: 33.33vw;
     height: 60vw;
-    opacity: 100;
+    opacity: 0;
     position: relative;
+    top: -80%;
   }
   .design-archives nav ul {
     top: 50%;
+    left: -5%;
+    transform: scale(0.7);
   }
 
   .design-archives:hover nav ul {
@@ -377,16 +398,16 @@ aside h3 {
   .zen-resources ul {
     width: 33.33vw;
     height: 60vw;
-    opacity: 100;
+    opacity: 0;
     position: relative;
     margin: 0;
-  }
-  .zen-resources ul li:first-child {
-    margin-top: 32vw;
   }
 
   .zen-resources:hover ul:hover {
     transform: skewY(0deg);
+    top: -35%;
+    left: 15%;
+    transform: scale(0.7);
   }
   .zen-resources:hover ul li {
     margin-left: 0;
@@ -402,12 +423,14 @@ aside h3 {
     height: 33.33vw;
   }
   .design-selection nav {
-    width: 33.33vw;
-    height: 33.33vw;
+    width: 26vw;
+    height: 28vw;
+    transform: skewX(5deg);
   }
 
   .design-selection:hover nav ul {
     position: absolute;
+    left: 20px;
   }
 
   .design-archives {
@@ -421,7 +444,8 @@ aside h3 {
   }
 
   .design-archives:hover nav ul {
-    top: 20%;
+    top: 15%;
+    right: 55%;
   }
 
   .zen-resources {
@@ -430,18 +454,19 @@ aside h3 {
     height: 33.33vw;
   }
   .zen-resources ul {
-    width: 33.33vw;
-    height: 33.33vw;
+    width: 30vw;
+    height: 30vw;
   }
 
   .zen-resources:hover ul:hover {
-    transform: skewY(5deg);
+    transform: skewY(0deg);
+    transform: scale(0.9);
   }
   .zen-resources:hover ul li {
     margin-left: 5vw;
   }
   .zen-resources:hover ul li:first-child {
-    margin-top: 23vw;
+    margin-top: 19vw;
   }
 }
 .page-wrapper {
@@ -495,17 +520,26 @@ header h2 {
 }
 @media (min-width: 60em) {
   .page-wrapper {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 60vw 1fr;
     grid-template-columns: 60vw 1fr;
+    -ms-grid-gap: 10px;
     grid-gap: 10px;
   }
 
   .main {
+    -ms-grid-column: 1;
     grid-column: 1/2;
+    -ms-grid-row: 2;
+    grid-row: 2/3;
   }
 
   .sidebar {
+    -ms-grid-column: 2;
     grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
     grid-row: 1/3;
     margin: 0;
     margin-top: 400px;
@@ -513,10 +547,6 @@ header h2 {
 
   .wrapper {
     display: block;
-  }
-
-  footer {
-    margin: 0;
   }
 }
 

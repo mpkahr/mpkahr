@@ -14,7 +14,7 @@
     transition: .5s;
 }
 
-.intro header h1:hover {
+.intro header h1:hover, .intro header h1:target, .intro header h1:active {
     background: url(svg/curtain_2.svg);
     background-size: cover;
     background-repeat: no-repeat;
