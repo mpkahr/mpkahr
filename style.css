@@ -95,7 +95,6 @@ footer a:hover {
 }
 body {
   background: url(svg/tile.svg);
-  background-size: 960px 540px;
   margin: 0;
 }
 
@@ -104,10 +103,13 @@ body {
   background-image: url(svg/BubblesAndTub.svg), url(svg/movingBubble1.svg), url(svg/movingBubble2.svg), url(svg/movingBubble3.svg), url(svg/movingBubble4.svg), url(svg/movingBubble5.svg);
   background-repeat: no-repeat;
   background-position: bottom;
-  -webkit-background-repeat: no-repeat;
-  -webkit-background-position: bottom;
 }
 
+@media screen and (min-width: 0\0 ) and (min-resolution: 72dpi) {
+  body {
+    background-size: 1200px 630px;
+  }
+}
 @media (min-width: 35em) {
   .main {
     background-image: none;
@@ -118,8 +120,8 @@ body {
     background-image: url(svg/tub.svg), url(svg/movingBubble1.svg), url(svg/movingBubble2.svg), url(svg/movingBubble3.svg), url(svg/movingBubble4.svg), url(svg/movingBubble5.svg);
     background-repeat: no-repeat;
     background-position: bottom;
-    -webkit-background-repeat: no-repeat;
-    -webkit-background-position: bottom;
+    -ms-background-repeat: no-repeat;
+    -ms-background-position: bottom;
     padding-bottom: 50vw;
   }
 }
@@ -516,6 +518,7 @@ header h2 {
     -ms-grid-column: 1;
     grid-column: 1/2;
     -ms-grid-row: 2;
+    grid-row: 2/3;
   }
 
   .sidebar {
